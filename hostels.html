@@ -1,0 +1,32 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Browse Hostels</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/hostels.js" defer></script>
+</head><body>
+<header><!-- same navbar --></header>
+
+<main style="padding:2rem">
+  <h1>Hostels</h1>
+
+  <details open>
+    <summary>Filters</summary>
+    <div style="display:flex;gap:2rem;flex-wrap:wrap;margin-top:1rem">
+      <div>
+        <label>Max Price (₹)</label><br>
+        <input type="number" id="fPrice" placeholder="6000">
+      </div>
+      <div>
+        <label>Amenities</label><br>
+        <label><input type="checkbox" value="WiFi"> WiFi</label>
+        <label><input type="checkbox" value="Food"> Food</label>
+        <label><input type="checkbox" value="AC"> AC</label>
+      </div>
+    </div>
+  </details>
+
+  <div class="cards" id="list" style="margin-top:2rem"></div>
+</main>
+
+<footer></footer>
+</body></html>

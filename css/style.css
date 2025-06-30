@@ -1,0 +1,59 @@
+/* ========== CSS CUSTOM PROPS ========== */
+:root {
+  --brand: #3f51b5;
+  --brand-dark: #1f2c7b;
+  --bg: #f5f7fa;
+  --text: #222;
+  --card-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --bg: #1b1d21;
+  --text: #f8f9fa;
+  --card-bg: #25272d;
+}
+
+/* Reset + Global */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height:100vh;
+  display:flex;flex-direction:column;
+}
+
+/* header / nav */
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  background:var(--brand);color:#fff;padding:12px 32px
+}
+header .logo{font-size:22px;font-weight:700}
+nav ul{display:flex;gap:20px;list-style:none}
+nav a{color:#fff;text-decoration:none;font-weight:500}
+
+/* hero */
+.hero{
+  text-align:center;padding:6rem 1rem;background:#e3f2fd
+}
+.hero input{padding:10px;width:260px;margin-top:1rem}
+.hero button{padding:10px 24px;background:var(--brand);border:none;color:#fff}
+
+/* cards */
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{
+  background:var(--card-bg);width:260px;border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);padding:14px;transition:transform .2s
+}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;height:150px;object-fit:cover;border-radius:6px}
+
+/* footer */
+footer{text-align:center;margin-top:auto;background:var(--brand);
+  color:#fff;padding:16px}
+
+/* dark-mode toggle button (simple) */
+.toggle{
+  cursor:pointer;border:2px solid #fff;border-radius:20px;
+  padding:4px 14px;font-size:14px;color:#fff;background:transparent
+}

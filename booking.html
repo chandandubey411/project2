@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Confirm Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/booking.js" defer></script>
+</head><body>
+<header><!-- navbar --></header>
+
+<main style="padding:2rem;max-width:480px;margin:auto">
+  <h1>Booking</h1>
+  <form id="form" class="card" style="padding:1rem">
+    <p><strong id="hName"></strong></p>
+    <p>₹<span id="hPrice"></span> per month</p><hr>
+
+    <label>Your Name<input required name="user" /></label><br>
+    <label>Mobile<input required name="mobile" type="tel" /></label><br>
+    <label>Months<input required name="months" type="number" min="1" /></label><br>
+    <label>Payment
+      <select name="pay"><option>Cash</option><option>UPI</option></select>
+    </label><br><br>
+
+    <button>Confirm Booking</button>
+  </form>
+</main>
+
+<footer></footer>
+</body></html>

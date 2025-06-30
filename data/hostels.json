@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Sunrise PG",
+    "city": "Delhi",
+    "college": "Delhi University",
+    "price": 4500,
+    "distance": 1.2,
+    "amenities": ["WiFi", "Food", "AC"],
+    "images": ["hostel1.jpg","hostel1b.jpg"],
+    "description": "Comfortable stay near DU North Campus.",
+    "rating": 4.3
+  },
+  {
+    "id": 2,
+    "name": "GreenNest Hostel",
+    "city": "Bangalore",
+    "college": "Christ University",
+    "price": 6000,
+    "distance": 0.8,
+    "amenities": ["WiFi","Food","Laundry"],
+    "images": ["hostel2.jpg"],
+    "description": "Garden-view rooms, healthy meals.",
+    "rating": 4.6
+  },
+  {
+    "id": 3,
+    "name": "Comfort Stay",
+    "city": "Pune",
+    "college": "Symbiosis",
+    "price": 5000,
+    "distance": 1.5,
+    "amenities": ["WiFi","AC"],
+    "images": ["hostel3.jpg"],
+    "description": "Spacious rooms with study desks.",
+    "rating": 4.1
+  }
+]
